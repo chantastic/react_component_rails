@@ -18,9 +18,13 @@ module ReactComponentRails
              :banner => "field[:type] field[:type] ..."
 
     def create_component_file
-      extension = "js.jsx"
-      file_path = File.join('app/assets/javascripts/components', "#{attributes[0].camelize}.#{extension}")
+      file_path = File.join('app/assets/javascripts/components', "#{attributes[0].camelize}.js.jsx")
       template("component.js.jsx", file_path)
+    end
+
+    def create_component_test_file
+      file_path = File.join('test/assets/javascripts/components', "#{attributes[0].camelize}-test.js")
+      template("component-test.js", file_path)
     end
   end
 end
