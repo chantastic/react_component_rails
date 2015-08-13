@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "mocha",
+    "test:watch": "node_modules/.bin/nodemon -e js,jsx node_modules/.bin/_mocha"
+  },
+  "devDependencies": {
+    "react": "*",
+    "mocha": "*",
+    "babel": "*",
+    "nodemon": "*",
+    "sinon": "*"
+  }
+}
