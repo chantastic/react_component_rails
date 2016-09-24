@@ -1,0 +1,6 @@
+{
+  "watch": [
+    "app/assets/javascripts/components",
+    "test/assets/javascripts/components"
+  ]
+}
